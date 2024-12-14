@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Progress - EduQuest</title>
+    <link rel="stylesheet" href="activity.css"> <!-- Link to the CSS file -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js for the progress chart -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>EduQuest</h1>
+            <p>Your path to knowledge</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Daily Progress Section -->
+    <section class="daily-progress">
+        <h2>Your Daily Progress</h2>
+        
+        <!-- Daily Overview Card -->
+        <div class="progress-card">
+            <h3>Today's Activity</h3>
+            <p><strong>Lessons Completed:</strong> <span id="completedLessons">0</span> / 10</p>
+            <p><strong>Time Spent:</strong> <span id="timeSpent">0 hours</span></p>
+            <p><strong>Streak:</strong> <span id="streak">0</span> days</p>
+        </div>
+
+        <!-- Daily Progress Chart -->
+        <div class="chart-container">
+            <canvas id="progressChart"></canvas>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 EduQuest. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="activity.js"></script>
+</body>
+</html>

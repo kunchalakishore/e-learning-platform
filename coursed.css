@@ -1,0 +1,107 @@
+/* Resetting margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and header styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f4f5;
+}
+
+/* Header and Navigation Bar */
+header {
+    background-color:#3c9edf; /* Dark footer background */
+/* Dark background color for the header */
+    padding: 15px 30px; /* Adjusted padding for the header */
+    color: white;
+}
+
+header .logo h1 {
+    font-size: 2em;
+    margin-bottom: 10px; /* Optional: Adds space between logo and navigation */
+}
+
+/* Navigation Bar */
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around; /* Space out the links evenly */
+    gap: 30px; /* Adjust gap between navigation items */
+}
+
+header nav ul li {
+    padding: 5px 0; /* Optional: Adds space above and below navigation items */
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em; /* Increased font size for better readability */
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+    color: #4CAF50; /* Highlight color on hover */
+}
+
+/* Course details styles */
+.course-detail {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.course-info {
+    width: 60%;
+}
+
+.course-info img {
+    width: 78%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.course-info .info {
+    font-size: 1.2em;
+}
+
+.course-info .info p {
+    margin-bottom: 15px;
+}
+
+/* Payment button styles */
+.payment-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+.payment-button button {
+    padding: 15px 30px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.payment-button button:hover {
+    background-color: #218838;
+}
+
+/* Footer styles */
+footer {
+    background-color: #3c9edf; /* Dark footer background */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 1.1em;
+}

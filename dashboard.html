@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - EduQuest</title>
+    <link rel="stylesheet" href="dashbord.css">
+</head>
+<body>
+
+    <!-- Sidebar Section -->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h2>EduQuest</h2>
+            <p>Your Learning Hub</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="profile1.html">Profile</a></li>
+                <li><a href="index.html" id="logout-link">Logout</a></li>
+                <li><a href="activity.html" id="Progress-link">Progress</a></li>
+                <li><a href="achivement.html" id="Certificate">Certifications</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content Section -->
+    <main class="main-content">
+        <header class="header">
+            <h1>Welcome to Mahesh Namala</h1>
+            <p>Your personalized learning dashboard</p>
+        </header>
+
+        <!-- Dashboard Overview Section -->
+        <section class="dashboard-overview">
+            <div class="stat-card">
+                <h3>Courses Completed</h3>
+                <p>5</p>
+            </div>
+            <div class="stat-card">
+                <h3>Courses In Progress</h3>
+                <p>2</p>
+            </div>
+            <div class="stat-card">
+                <h3>Upcoming Courses</h3>
+                <p>3</p>
+            </div>
+        </section>
+
+        <!-- Recent Activity Section -->
+        <section class="recent-activity">
+            <h2>Recent Activity</h2>
+            <ul>
+                <li>Completed "Web Development for Beginners" - 12 Dec 2024</li>
+                <li>Started "Introduction to Artificial Intelligence" - 10 Dec 2024</li>
+                <li>Completed Quiz 1 in "Data Science and Analytics" - 9 Dec 2024</li>
+            </ul>
+        </section>
+
+        <!-- Profile Section (Only visible when clicking on Profile) -->
+        <section class="profile" id="profile-section">
+            <h2>Your Profile</h2>
+            <div class="profile-info">
+                <p><strong>Name:</strong> Mahesh</p>
+                <p><strong>Email:</strong> Maheshnamal@gmail.com</p>
+                <p><strong>Courses Completed:</strong> 5</p>
+                <p><strong>Courses In Progress:</strong> 2</p>
+            </div>
+
+            <h3>Completed Courses:</h3>
+            <div class="completed-courses">
+                <div class="completed-course">
+                    <h4>Web Development for Beginners</h4>
+                    <p>Progress: 100%</p>
+                    <button class="download-certificate" onclick="downloadCertificate('Web Development for Beginners')">Download Certificate</button>
+                </div>
+                <div class="completed-course">
+                    <h4>Data Science and Analytics</h4>
+                    <p>Progress: 100%</p>
+                    <button class="download-certificate" onclick="downloadCertificate('Data Science and Analytics')">Download Certificate</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Course Overview Section -->
+        <section class="courses-overview">
+            <h2>Your Courses</h2>
+            <div class="courses-list">
+                <div class="course-card">
+                    <img src="https://th.bing.com/th/id/OIP.9wBaT8xY9Dx-KDzW5aRi4AHaE8?w=1500&h=1000&rs=1&pid=ImgDetMain" alt="Course Image">
+                    <h3>Web Development for Beginners</h3>
+                    <p>Progress: 80%</p>
+                    <button onclick="window.location.href='course-details.html'">Continue</button>
+                </div>
+                <div class="course-card">
+                    <img src="https://futurumgroup.com/wp-content/uploads/2024/02/Oracle-Autonomous-Database-Select-AI-Fuels-AI-Infused-Innovation.jpg" alt="Course Image">
+                    <h3>Introduction to Artificial Intelligence</h3>
+                    <p>Progress: 50%</p>
+                    <button onclick="window.location.href='course-details.html'">Continue</button>
+                </div>
+                <div class="course-card">
+                    <img src="https://img.freepik.com/premium-photo/big-data-science-analysis-information-technology-concept-server-room-background_1085052-3.jpg" alt="Course Image">
+                    <h3>Data Science and Analytics</h3>
+                    <p>Progress: 40%</p>
+                    <button onclick="window.location.href='course-details.html'">Continue</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 EduQuest. All rights reserved.</p>
+    </footer>
+
+    <script src="dashboard.js"></script>
+
+</body>
+</html>

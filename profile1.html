@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduQuest - User Profile</title>
+    <link rel="stylesheet" href="profile1.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <h1>EduQuest</h1>
+            <p>Your path to knowledge</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Profile Section -->
+    <section class="profile-section">
+        <div class="profile-header">
+            <img src="C:\Users\saiph\OneDrive\Pictures\89cff915359a0df7a96d158a3843228b.jpg" alt="User Profile Picture" class="profile-pic">
+            <h2 id="userName">Mahesh</h2>
+            <p id="userEmail">Maheshnamal@gmail.com</p>
+            <button class="edit-btn" onclick="toggleEditForm()">Edit Profile</button>
+        </div>
+
+        <div class="settings">
+            <h3>Account Settings</h3>
+            <ul>
+                <li><button onclick="toggleDarkMode()">Toggle Dark Mode</button></li>
+                <li><button onclick="openSettings()">Account Settings</button></li>
+                <li><a href="index.html" id="logout-link">Logout</a></li>
+            </ul>
+        </div>
+
+        <!-- Edit Profile Form (Hidden by Default) -->
+        <div id="editProfileForm" class="edit-profile-form">
+            <h3>Edit Profile</h3>
+            <label for="editName">Name:</label>
+            <input type="text" id="editName" value="Mahesh Namala">
+            <label for="editEmail">Email:</label>
+            <input type="email" id="editEmail" value="namala@example.com">
+            <button onclick="saveProfile()">Save</button>
+            <button onclick="toggleEditForm()">Cancel</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 EduQuest. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="profile1.js"></script> <!-- Link to the JS file -->
+</body>
+</html>
